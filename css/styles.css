@@ -1,0 +1,92 @@
+:root{
+    --light-grey: rgba(231, 230, 230, 0.3);
+}
+@font-face{
+    font-family: norse-bold;
+    src: url(../fonts/Norse-Bold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+}
+.panel-left{
+    background-image: url("../images/panel-background.avif");
+    width: 40vw;
+    height: 100vh;
+    background-repeat: round;
+    display: flex;
+    flex-direction: column;
+}
+.empty-div-top{
+    height: 20vh;
+}
+.panel-image-credits{
+    display: flex;
+    justify-content: center;
+    color: white;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+a:visited{
+    color: white;
+}
+.sidebar-logo{
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    height: 100%;
+}
+.logo-text{
+    font-family: norse-bold;
+    color: white;
+    font-size: 100px;
+}
+.panel-right{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+/* Padding for right panel */
+.panel-right > *{
+    padding: 20px;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--light-grey);
+    height: 30%;
+    box-shadow: 10px 1px 4px var(--light-grey);
+}
+.form-div{
+    height: 40%;
+    box-shadow: 10px 1px 4px var(--light-grey);
+}
+form{
+    display: flex;
+    height: 100%;
+}
+.submit{
+    background-color: var(--light-grey);
+    height: 30%;
+    box-shadow: 10px 1px 4px var(--light-grey);
+}
+#log-in-link{
+    color: green;
+    text-decoration: none;
+}
