@@ -18,7 +18,7 @@ body{
     background-image: url("../images/panel-background.avif");
     width: 40vw;
     height: 100vh;
-    background-repeat: round;
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
@@ -77,7 +77,7 @@ a:visited{
     height: 40%;
     box-shadow: 10px 1px 4px var(--light-grey);
 }
-form{
+#sign-up-form{
     display: flex;
     height: 100%;
 }
@@ -87,6 +87,6 @@ form{
     box-shadow: 10px 1px 4px var(--light-grey);
 }
 #log-in-link{
-    color: green;
+    color: #596D48;
     text-decoration: none;
 }
