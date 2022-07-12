@@ -9,14 +9,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 body{
     display: flex;
 }
 .panel-left{
     background-image: url("../images/panel-background.avif");
-    width: 40vw;
+    width: 60%;
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -63,19 +63,48 @@ a:visited{
 }
 /* Padding for right panel */
 .panel-right > *{
-    padding: 20px;
+    padding: 100px;
 }
 .message{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     background-color: var(--light-grey);
     height: 30%;
     box-shadow: 10px 1px 4px var(--light-grey);
+    font-size: 30px;
 }
 .form-div{
     height: 40%;
     box-shadow: 10px 1px 4px var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form-text{
+    font-size: 30px;
+}
+.form-left, .form-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+.form-element{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+/* Sign up buttons styling */
+.form-element > input{
+    height: 30px;
+    width: 200px;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 10px;
+    font-size:18px;
 }
 #sign-up-form{
     display: flex;
@@ -85,8 +114,31 @@ a:visited{
     background-color: var(--light-grey);
     height: 30%;
     box-shadow: 10px 1px 4px var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-#log-in-link{
+.submit-top, .submit-bottom{
+    height: 100%;
+}
+.submit-top{
+    display: flex;
+    align-items: center;
+}
+.log-in-text{
+    font-size: 20px;
+}
+.log-in-text a{
     color: #596D48;
     text-decoration: none;
+}
+.create-acc-button{
+    font-size: 18px;
+    background-color: #596D48;
+    border-color: #596D48;
+    color: white;
+    border-style:none;
+    border-radius: 12px;
+    height: 40%;
+    width: 15%;
 }
